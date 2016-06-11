@@ -1,0 +1,22 @@
+{
+    "name": "natocto/football-data",
+    "description": "Nette integration of football-data.org's API.",
+    "keywords": ["Football fixtures, Football data, Football results"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jakub Kotek",
+            "homepage": "http://jakubkotek.cz",
+            "email": "info@jakubkotek.cz"
+        }
+    ],
+    "require": {
+        "nette/di": "^2.3.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "NatocTo\\FootballData\\": "src/"
+        }
+    }
+}
