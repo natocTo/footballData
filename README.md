@@ -41,6 +41,8 @@ class FootballPresenter extends Nette\Application\UI\Presenter
 	{
 		$euro2016 = $this->footballData->getSeason(424);
 
+		$this->template->name = $euro2016->getName();
+
 		$this->template->fixtures = $euro2016->getFixtures();
 	}
 }

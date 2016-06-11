@@ -17,24 +17,23 @@ class Team extends BaseModel {
 
 
     /**
-     * Return team id.
-     *
-     * @return int
-     */
-    public function id()
-    {
-        return $this->payload->id;
-    }
-
-
-    /**
      * Return team name.
      *
      * @return string
      */
-    public function name()
+    public function getName()
     {
         return $this->payload->name;
+    }
+
+    /**
+     * Return team code.
+     *
+     * @return string
+     */
+    public function getCode()
+    {
+        return $this->payload->code;
     }
 
 
@@ -43,7 +42,7 @@ class Team extends BaseModel {
      *
      * @return stdObjects
      */
-    public function detail()
+    public function getDetail()
     {
         return $this->payload;
     }

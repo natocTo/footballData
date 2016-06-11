@@ -21,7 +21,7 @@ class Soccerseason extends BaseModel {
      *
      * @return int
      */
-    public function id()
+    public function getId()
     {
         return $this->payload->id;
     }
@@ -32,7 +32,7 @@ class Soccerseason extends BaseModel {
      *
      * @return string
      */
-    public function name()
+    public function getName()
     {
         return $this->payload->caption;
     }
@@ -43,7 +43,7 @@ class Soccerseason extends BaseModel {
      *
      * @return stdObjects
      */
-    public function detail()
+    public function getDetail()
     {
         return $this->payload;
     }
