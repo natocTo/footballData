@@ -26,6 +26,26 @@ footballData:
 	authToken: 'YOUR-TOKEN'
 ```
 
+example of usage
+
+```php
+class FootballPresenter extends Nette\Application\UI\Presenter
+{
+	/**
+	 * @inject
+	 * @var \NatocTo\FootballData\FootballData
+	 */
+	public $footballData;
+
+	public function renderDefault()
+	{
+		$euro2016 = $this->footballData->getSeason(424);
+
+		$this->template->fixtures = $euro2016->getFixtures();
+	}
+}
+```
+
 
 Documentation
 ------------
