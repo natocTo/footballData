@@ -17,6 +17,39 @@ class Soccerseason extends BaseModel {
 
 
     /**
+     * Return season id.
+     *
+     * @return int
+     */
+    public function id()
+    {
+        return $this->payload->id;
+    }
+
+
+    /**
+     * Return season caption (name).
+     *
+     * @return string
+     */
+    public function name()
+    {
+        return $this->payload->caption;
+    }
+
+
+    /**
+     * Return object contains all available information about current season.
+     *
+     * @return stdObjects
+     */
+    public function detail()
+    {
+        return $this->payload;
+    }
+
+
+    /**
      * Function returns all fixtures for the instantiated soccerseason.
      *
      * @return array of fixture objects

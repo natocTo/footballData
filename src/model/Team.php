@@ -17,6 +17,39 @@ class Team extends BaseModel {
 
 
     /**
+     * Return team id.
+     *
+     * @return int
+     */
+    public function id()
+    {
+        return $this->payload->id;
+    }
+
+
+    /**
+     * Return team name.
+     *
+     * @return string
+     */
+    public function name()
+    {
+        return $this->payload->name;
+    }
+
+
+    /**
+     * Return object contains all available information about current team.
+     *
+     * @return stdObjects
+     */
+    public function detail()
+    {
+        return $this->payload;
+    }
+
+
+    /**
      * Function returns all fixtures for the team for this season.
      *
      * @param string $venue
