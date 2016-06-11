@@ -1,6 +1,7 @@
 {
     "name": "natocto/football-data",
     "description": "Nette integration of football-data.org's API.",
+    "keywords": ["football","results","teams","fixtures"],
     "version": "0.1.0",
     "license": "MIT",
     "authors": [
